@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include "ESPAsyncUDP.h"
-#include "TeroGlobalSettings.h"
+#include "SapucaySettings.h"
 
 
 void connectToWifi() {
