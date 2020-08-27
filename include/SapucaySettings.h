@@ -4,3 +4,5 @@
 #define WIFI_RETRY_TIMEOUT      1000                        // 1 segundo 
 #define CHUCARO_IP              (13, 59, 165, 236)          // IP del Servidor UDP
 #define CHUCARO_PORT            1234                        // Puerto del servidor UDP
+#define SAPUCAY_USER_ID         "1"                         // ID del usuario
+#define SAPUCAY_PRODUCT         "silobags"                  // ID del usuario
