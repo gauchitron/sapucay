@@ -7,17 +7,13 @@ Sapucay sapucay;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println();
-
-  Serial.println("Conectando al wifi");
-  sapucay.poronga();
+  sapucay.connectWiFi();
 }
 
 void loop() {
 
   while (true)
   {
-    Serial.println("Mandando data");
     sapucay.sendSensorsData(2.0, 3.0);
     delay(3000);
   }

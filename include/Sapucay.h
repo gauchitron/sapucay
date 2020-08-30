@@ -7,24 +7,34 @@
 #include <ESP8266WiFi.h>
 #include <Arduino.h>
 
-#define WIFI_SSID               "Campo"                     // SSID de la lanza maestro
-#define WIFI_PASSWORD           "1234"                      // Password para conectarse a la lanza maestro
-#define WIFI_CONNECT_TIMEOUT    5000                        // Timeout max al momento de tratar de conectarse a la lanza maestro
-#define WIFI_RETRY_TIMEOUT      1000                        // 1 segundo 
-#define CHUCARO_IP              "13.59.165.236"             // IP del Servidor UDP
-#define CHUCARO_PORT            1234                        // Puerto del servidor UDP
-#define SAPUCAY_USER_ID         "1"                         // ID del usuario
-#define SAPUCAY_PRODUCT         "silobags"                  // ID del usuario
+/*
+* Configuracion de constantes
+* WIFI_SSID             -- Nombre del SSID de la lanza maestro
+* WIFI_PASSWORD         -- Password de la lanza maestro
+* CHUCARO_IP            -- IP del servidor UDP
+* CHUCARO_PORT          -- Puerto del servidor UDP
+* SAPUCAY_USER_ID       -- ID del usuario
+* SAPUCAY_PRODUCT       -- ID del producto
+*/
 
+#define WIFI_SSID               "WIFI_CEGNET_07537"
+#define WIFI_PASSWORD           "d8ant@Co"
+#define CHUCARO_IP              "13.59.165.236"
+#define CHUCARO_PORT            1234
+#define SAPUCAY_USER_ID         "1"
+#define SAPUCAY_PRODUCT         "silobags"
+
+
+/*
+* Sapucay class definition
+*/
 class Sapucay
 {
     public:
-        // Sapucay();
         IPAddress str2IPAddress(String str);
         String makePkg(float temperature, float humidity);
         void sendSensorsData(float temperature, float humidity);
         void connectWiFi();
-        void poronga();
         int getIpBlock(int index, String str);
 };
 
