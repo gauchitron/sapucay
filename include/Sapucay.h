@@ -8,6 +8,23 @@
 #include <Arduino.h>
 
 /*
+* BME280 - Thanks adafruit for the lib
+*/
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BME280.h>
+#define BME_SCK 13
+#define BME_MISO 12
+#define BME_MOSI 11
+#define BME_CS 10
+#define SEALEVELPRESSURE_HPA (1013.25)
+/*
+* Ends of BME280
+*/
+
+
+/*
 * Configuracion de constantes
 * WIFI_SSID             -- Nombre del SSID de la lanza maestro
 * WIFI_PASSWORD         -- Password de la lanza maestro
@@ -17,8 +34,10 @@
 * SAPUCAY_PRODUCT       -- ID del producto
 */
 
-#define WIFI_SSID               "WIFI_CEGNET_07537"
-#define WIFI_PASSWORD           "d8ant@Co"
+// #define WIFI_SSID               "WIFI_CEGNET_07537"
+// #define WIFI_PASSWORD           "d8ant@Co"
+#define WIFI_SSID               "AndroidAP_7104"
+#define WIFI_PASSWORD           "qweqweqwe"
 #define CHUCARO_IP              "13.59.165.236"
 #define CHUCARO_PORT            1234
 #define SAPUCAY_USER_ID         "1"

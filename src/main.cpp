@@ -1,7 +1,7 @@
 #include <Arduino.h>
-#include <HTU21D.h>
 #include <ESP8266WiFi.h>
 #include "Sapucay.h"
+
 
 Sapucay sapucay;
 

@@ -9,6 +9,7 @@
  */
 void Sapucay::connectWiFi() {
   Serial.println();
+  delay(1000);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
   Serial.print("Conectando");
